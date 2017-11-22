@@ -1,81 +1,42 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package co.com.personal.patterns.designpatterns.state;
 
 /**
- *
- * @author vin001
+ * Interface que define el comportamiento de una puerta
+ * @author jayala
+ * @since Nov 21, 2017
+ * @version 1.0.0
  */
-public class Puerta implements IStatePuerta{
-    private IStatePuerta estadoActualDeLaPuerta = new StateAbierta();
-
-    @Override
-    public void cerrar() {
-        estadoActualDeLaPuerta.cerrar();
-    }
-
-    @Override
-    public void abrir() {
-        estadoActualDeLaPuerta.abrir();
-    }
-
-    @Override
-    public String getNombreEstado() {
-        return estadoActualDeLaPuerta.getNombreEstado();
-    }
+public interface Puerta {
+    String ESTADO_CERRADO = "ESTADO CERRADO";
+    String ESTADO_ABIERTO = "ESTADO ABIERTO";
     
-    private class StateAbierta implements IStatePuerta{
-        private IStatePuerta proximoEstado = new StateCerrada(this);
-        private String nombreEstado;
-        
-        StateAbierta(){
-            nombreEstado = ESTADO_ABIERTO;
-        }
-        
-        @Override
-        public void cerrar() {
-            System.out.println("Cerrando la puerta");
-            estadoActualDeLaPuerta = proximoEstado;
-        }
-
-        @Override
-        public void abrir() {
-            System.out.println("La puerta ya esta abierta");
-        }
-        
-        @Override
-        public String getNombreEstado(){
-            return nombreEstado;
-        }         
-    }
+    /**
+     * Método que describe la forma de cerrar una puerta y dejarla en condición cerrada
+     * @author Jos&eacute; Vicente Ayala Luna
+     * @return void
+     * @since Nov 21, 2017
+     * @throws
+     * @version 1.0.0 
+     */
+    public void cerrar();
+    /**
+     * Método que describe la forma de abrir una puerta y dejarla en condición abierta
+     * @author Jos&eacute; Vicente Ayala Luna
+     * @return void
+     * @since Nov 21, 2017
+     * @throws
+     * @version 1.0.0 
+     */
+    public void abrir();
+    /**
+     * Método que describe la forma de conocer si la puerta esta cerrada o abierta
+     * @author Jos&eacute; Vicente Ayala Luna
+     * @return
+     * @return String
+     * @since Nov 21, 2017
+     * @throws
+     * @version 1.0.0 
+     */
+    public String getNombreEstado();
     
-    private class StateCerrada implements IStatePuerta{
-        private String nombreEstado;
-        private IStatePuerta proximoEstado;
-        
-        StateCerrada(IStatePuerta nuevoEstado){
-            proximoEstado = nuevoEstado;
-            nombreEstado = ESTADO_CERRADO;
-        }
-        
-        @Override
-        public void cerrar() {
-            System.out.println("La puerta ya esta cerrada");
-        }
-
-        @Override
-        public void abrir() {
-            System.out.println("Abriendo la puerta");
-            estadoActualDeLaPuerta = proximoEstado;
-        }
-        
-        @Override
-        public String getNombreEstado(){
-            return nombreEstado;
-        } 
-        
-    }
 }

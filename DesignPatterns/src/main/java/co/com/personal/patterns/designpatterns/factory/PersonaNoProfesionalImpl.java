@@ -20,25 +20,16 @@ public class PersonaNoProfesionalImpl implements Persona {
 		this.identificacion = identificacion;
 	}	
 	
-	/* (non-Javadoc)
-	 * @see co.com.personal.patterns.designpatterns.factory.Persona#obtenerNombre()
-	 */
 	@Override
 	public String obtenerNombre() {
 		return nombre;
 	}
 
-	/* (non-Javadoc)
-	 * @see co.com.personal.patterns.designpatterns.factory.Persona#obtenerApellido()
-	 */
 	@Override
 	public String obtenerApellido() {
 		return apellido;
 	}
 
-	/* (non-Javadoc)
-	 * @see co.com.personal.patterns.designpatterns.factory.Persona#obtenerIdentificacion()
-	 */
 	@Override
 	public int obtenerIdentificacion() {
 		return identificacion;

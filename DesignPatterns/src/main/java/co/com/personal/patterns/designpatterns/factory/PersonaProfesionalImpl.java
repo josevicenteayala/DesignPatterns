@@ -3,9 +3,12 @@
  */
 package co.com.personal.patterns.designpatterns.factory;
 
+
 /**
+ * Clase que identifica a las personas que son profesionales
  * @author jayala
- *
+ * @since Nov 21, 2017
+ * @version 1.0.0
  */
 public class PersonaProfesionalImpl implements Persona {
 
@@ -27,25 +30,14 @@ public class PersonaProfesionalImpl implements Persona {
 		this.identificacion = identificacion;
 	}	
 	
-	/* (non-Javadoc)
-	 * @see co.com.personal.patterns.designpatterns.factory.Persona#obtenerNombre()
-	 */
 	@Override
 	public String obtenerNombre() {
 		return nombre;
 	}
-
-	/* (non-Javadoc)
-	 * @see co.com.personal.patterns.designpatterns.factory.Persona#obtenerApellido()
-	 */
 	@Override
 	public String obtenerApellido() {
 		return apellido;
 	}
-
-	/* (non-Javadoc)
-	 * @see co.com.personal.patterns.designpatterns.factory.Persona#obtenerIdentificacion()
-	 */
 	@Override
 	public int obtenerIdentificacion() {
 		return identificacion;
