@@ -2,37 +2,42 @@ package co.com.personal.patterns.designpatterns.state;
 
 public class SolucionConSwitch {
 
-	private static final int CODIGO_ESTADO_TRANSITORIO = 2;
-	private static final int CODIGO_ESTADOINICIAL = 1;
+	private static final String ESTADO_ABIERTO = "estadoAbierto";
+	private static final String ESTADO_CERRADO = "estadoCerrado";
+	private static final int CODIGO_ESTADO_ABIERTO = 2;
+	private static final int CODIGO_ESTADO_CERRADO = 1;
 
 	public static void main(String[] args) {
-		String estadoSiguiente = identificacionEstado(CODIGO_ESTADOINICIAL);
+		String estadoSiguiente = ESTADO_CERRADO;
 		System.out.println("El estado actual es: "+estadoSiguiente);
 		
-		estadoSiguiente = identificacionEstado(CODIGO_ESTADO_TRANSITORIO);
-		System.out.println("El estado actual es: "+estadoSiguiente);
+		estadoSiguiente = identificacionsiguienteEstado(CODIGO_ESTADO_CERRADO);
+		System.out.println("El estado siguiente es: "+estadoSiguiente);
 		
-		estadoSiguiente = identificacionEstado(9);
-		System.out.println("El estado actual es: "+estadoSiguiente);		
+		estadoSiguiente = identificacionsiguienteEstado(CODIGO_ESTADO_ABIERTO);
+		System.out.println("El estado siguiente es: "+estadoSiguiente);
+		
+		estadoSiguiente = identificacionsiguienteEstado(9);
+		System.out.println("El estado siguiente es: "+estadoSiguiente);		
 	}
 	
 
 	/**
 	 * Determina el estado que sigue de acuerdo a una constante
 	 */
-	private static String identificacionEstado(int estado) {
-		String estadoActual = "estadoInicial";
+	private static String identificacionsiguienteEstado(int estado) {
+		String estadoActual = ESTADO_CERRADO;
 		
 		switch(estado) {
-		case CODIGO_ESTADOINICIAL: {
-			estadoActual = "estadoTransitorio";
+		case CODIGO_ESTADO_CERRADO: {
+			estadoActual = ESTADO_ABIERTO;
 			break;
 		}
-		case CODIGO_ESTADO_TRANSITORIO:{
-			estadoActual = "estadoFinal";
+		case CODIGO_ESTADO_ABIERTO:{
+			estadoActual = ESTADO_CERRADO;
 			break;
 		}
-		default: estadoActual = "estadoInicial";
+		default: estadoActual = ESTADO_CERRADO;
 		}
 		
 		return estadoActual;
