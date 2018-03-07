@@ -18,7 +18,7 @@ public class SolucionConSwitch {
 	
 
 	/**
-	 * 
+	 * Determina el estado que sigue de acuerdo a una constante
 	 */
 	private static String identificacionEstado(int estado) {
 		String estadoActual = "estadoInicial";
