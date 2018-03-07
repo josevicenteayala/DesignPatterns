@@ -36,18 +36,18 @@ public class PuertaImpl implements Puerta{
         private String nombreEstado;
         
         PuertaCerradaImpl(){
-            nombreEstado = ESTADO_ABIERTO;
+            nombreEstado = ESTADO_CERRADO;
         }
         
         @Override
         public void cerrar() {
-            System.out.println("Cerrando la puerta");
-            estadoActualDeLaPuerta = proximoEstado;
+        		System.out.println("La puerta ya esta cerrada");
         }
 
         @Override
         public void abrir() {
-            System.out.println("La puerta ya esta abierta");
+            System.out.println("Abriendo la puerta");
+            estadoActualDeLaPuerta = proximoEstado;
         }
         
         @Override
@@ -68,18 +68,18 @@ public class PuertaImpl implements Puerta{
         
         PuertaAbiertaImpl(Puerta nuevoEstado){
             proximoEstado = nuevoEstado;
-            nombreEstado = ESTADO_CERRADO;
+            nombreEstado = ESTADO_ABIERTO;
         }
         
         @Override
         public void cerrar() {
-            System.out.println("La puerta ya esta cerrada");
+            System.out.println("Cerrando la puerta");
+            estadoActualDeLaPuerta = proximoEstado;
         }
 
         @Override
         public void abrir() {
-            System.out.println("Abriendo la puerta");
-            estadoActualDeLaPuerta = proximoEstado;
+        	 	System.out.println("La puerta ya esta abierta");
         }
         
         @Override

@@ -78,9 +78,38 @@ public class PuertaTest {
     public void testGetNombreEstado() {
         System.out.println("getNombreEstado");
         Puerta puerta = new PuertaImpl();
-        String expResult = Puerta.ESTADO_ABIERTO;
+        String expResult = Puerta.ESTADO_CERRADO;
         String result = puerta.getNombreEstado();
         assertEquals(expResult, result);
     }
+    
+    /**
+     * Permite probar los estados completos de la puerta
+     * @return void
+     */
+    @Test
+    public void testAbrirYCerrarPuerta() {
+    		System.out.println("------------PRUEBA CONTINUA DE ABRIR Y CERRAR -------------------");
+    		Puerta puerta = new PuertaImpl();
+    		System.out.println("Estado inicial de la puerta "+puerta.getNombreEstado());
+    		for(int i = 0; i<4;i++) {
+        		puerta.abrir();
+        		System.out.println("Estado actual de la puerta "+puerta.getNombreEstado());
+        		esperar5Segundos();
+        		puerta.cerrar();
+        		System.out.println("Estado actual de la puerta "+puerta.getNombreEstado());
+        		esperar5Segundos();
+    		}
+
+    		System.out.println("------------FIN PRUEBA CONTINUA DE ABRIR Y CERRAR -------------------");
+    }
+
+	private void esperar5Segundos() {
+		try {
+			Thread.sleep(2000,0);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
     
 }
