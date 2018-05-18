@@ -1,4 +1,4 @@
-package co.com.personal.patterns.designpatterns.template;
+package co.com.personal.patterns.designpatterns.templatemethod;
 
 public class MarketWebStore extends WebStore {
 

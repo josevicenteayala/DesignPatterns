@@ -1,4 +1,4 @@
-package co.com.personal.patterns.designpatterns.template;
+package co.com.personal.patterns.designpatterns.templatemethod;
 
 import static org.junit.Assert.*;
 
@@ -7,6 +7,10 @@ import java.util.Base64;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
+
+import co.com.personal.patterns.designpatterns.templatemethod.FootballWebStore;
+import co.com.personal.patterns.designpatterns.templatemethod.MarketWebStore;
+import co.com.personal.patterns.designpatterns.templatemethod.WebStore;
 
 public class WebStoreTest {
 
