@@ -16,7 +16,7 @@ public class PersonaProfesionalImpl implements Persona {
 	private String apellido;
 	private int identificacion;
 	
-	public PersonaProfesionalImpl() {
+	private PersonaProfesionalImpl() {
 		
 	}
 
