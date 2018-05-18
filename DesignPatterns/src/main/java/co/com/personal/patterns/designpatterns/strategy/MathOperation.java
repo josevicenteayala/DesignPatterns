@@ -2,7 +2,7 @@ package co.com.personal.patterns.designpatterns.strategy;
 
 /**
  * @author joseaylu
- * 
+ * This is the strategy, that let changed the behavior at run time.
  *
  */
 public interface MathOperation {
