@@ -1,12 +1,11 @@
 package co.com.personal.patterns.designpatterns.decorator;
 
-import static org.junit.Assert.*;
-
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
 import co.com.personal.patterns.designpatterns.decorator.foodexample.BasicHamburger;
+import co.com.personal.patterns.designpatterns.decorator.foodexample.FinalHamburger;
 import co.com.personal.patterns.designpatterns.decorator.foodexample.Hamburger;
 import co.com.personal.patterns.designpatterns.decorator.foodexample.HamburgerBacon;
 import co.com.personal.patterns.designpatterns.decorator.foodexample.HamburgerCheese;
@@ -28,11 +27,17 @@ public class HamburguerTest {
 		
 		Hamburger hamburgerBacon = new HamburgerBacon(hamburger);
 		
+		//Hamburger hamburgerCheese = new HamburgerCheese(hamburger);
+		
 		Hamburger hamburgerBaconAndCheese = new HamburgerCheese(hamburgerBacon);
 		
-		System.out.println("Hamburger Ingredients: "+hamburgerBaconAndCheese.getDescription());
+		/***************FINAL HAMBURGER**************************************/
 		
-		System.out.println("Hamburger price: "+hamburgerBaconAndCheese.getCost());
+		Hamburger finalHambuerger = new FinalHamburger(hamburgerBaconAndCheese);
+		
+		System.out.println("Hamburger Ingredients: "+finalHambuerger.getDescription());
+		
+		System.out.println("Hamburger price: "+finalHambuerger.getCost());
 	}
 
 }

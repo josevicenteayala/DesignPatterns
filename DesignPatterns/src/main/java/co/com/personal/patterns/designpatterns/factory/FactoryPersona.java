@@ -1,7 +1,7 @@
 package co.com.personal.patterns.designpatterns.factory;
 
 /**
- * Permite construir un objeto Persona mediante la identificacion del tipo de persona y los atributos que la identifican
+ * Permite construir un objeto Persona mediante la identificacion del tipo de persona y los atributos que la caracterizan
  * @author Jose Vicente Ayala Luna
  * @since 2017-11-20
  * @version 1.0.0

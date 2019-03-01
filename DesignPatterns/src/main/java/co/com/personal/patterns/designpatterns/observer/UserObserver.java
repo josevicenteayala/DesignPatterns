@@ -11,8 +11,8 @@ public class UserObserver implements Observer {
 	}
 	
 	@Override
-	public void update(Observable observable, Object objectHasBennModify) {	
-		Discount smartPhoneDiscount = (Discount)objectHasBennModify;
+	public void update(Observable observable, Object objectHasBeenModify) {	
+		Discount smartPhoneDiscount = (Discount)objectHasBeenModify;
 		System.out.println("user "+userName+" has been notified about the SmartPhone discount");		
 		System.out.println("The discount is: "+smartPhoneDiscount.getDiscount());
 	}
