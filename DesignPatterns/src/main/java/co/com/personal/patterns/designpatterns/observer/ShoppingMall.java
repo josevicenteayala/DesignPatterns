@@ -10,8 +10,11 @@ public class ShoppingMall {
 		smartPhoneDiscount.addObserver(observerJose);
 		smartPhoneDiscount.addObserver(observerMartha);
 		
+		System.out.println("ShoppingMall.openShoppinfMall(): INICIA CON LOS DESCUENTOS");
 		smartPhoneDiscount.initStopDiscount();
+		System.out.println("ShoppingMall.openShoppinfMall(): DETIENE LOS DESCUENTOS");
 		smartPhoneDiscount.initStopDiscount();
+		System.out.println("ShoppingMall.openShoppinfMall(): INICIA CON LOS DESCUENTOS OTRA VEZ");
 		smartPhoneDiscount.initStopDiscount();
 	}
 
