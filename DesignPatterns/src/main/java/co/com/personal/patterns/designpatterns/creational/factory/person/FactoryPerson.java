@@ -1,4 +1,4 @@
-package co.com.personal.patterns.designpatterns.factory;
+package co.com.personal.patterns.designpatterns.creational.factory;
 
 /**
  * Permite construir un objeto Persona mediante la identificacion del tipo de persona y los atributos que la caracterizan

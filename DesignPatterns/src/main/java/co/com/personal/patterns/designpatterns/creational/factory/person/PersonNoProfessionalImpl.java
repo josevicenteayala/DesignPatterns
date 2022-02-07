@@ -1,4 +1,4 @@
-package co.com.personal.patterns.designpatterns.factory;
+package co.com.personal.patterns.designpatterns.creational.factory;
 
 public class PersonaNoProfesionalImpl implements Persona {
 

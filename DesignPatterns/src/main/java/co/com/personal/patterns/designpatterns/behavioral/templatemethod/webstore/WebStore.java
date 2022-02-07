@@ -1,4 +1,4 @@
-package co.com.personal.patterns.designpatterns.templatemethod;
+package co.com.personal.patterns.designpatterns.behavioral.templatemethod;
 
 import java.util.Objects;
 
