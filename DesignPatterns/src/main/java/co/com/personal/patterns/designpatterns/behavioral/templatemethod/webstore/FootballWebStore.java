@@ -1,4 +1,4 @@
-package co.com.personal.patterns.designpatterns.behavioral.templatemethod;
+package co.com.personal.patterns.designpatterns.behavioral.templatemethod.webstore;
 
 public class FootballWebStore extends WebStore {
 

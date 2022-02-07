@@ -2,6 +2,9 @@ package co.com.personal.patterns.designpatterns.decorator;
 
 import static org.junit.Assert.*;
 
+import co.com.personal.patterns.designpatterns.structural.decorator.Car;
+import co.com.personal.patterns.designpatterns.structural.decorator.Nissan;
+import co.com.personal.patterns.designpatterns.structural.decorator.NissanCarDecorator;
 import org.junit.Before;
 import org.junit.Test;
 

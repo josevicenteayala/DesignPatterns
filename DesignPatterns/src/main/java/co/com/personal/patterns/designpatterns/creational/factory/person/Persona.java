@@ -1,4 +1,4 @@
-package co.com.personal.patterns.designpatterns.creational.factory;
+package co.com.personal.patterns.designpatterns.creational.factory.person;
 
 /**
  * Interface que describe el comportamiento de la Persona

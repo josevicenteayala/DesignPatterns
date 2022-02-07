@@ -1,8 +1,8 @@
-package co.com.personal.patterns.designpatterns.strategy;
+package co.com.personal.patterns.designpatterns.behavioral.strategy;
 
 public abstract class Calculator {
 
-	static enum OPERATION{		
+	public enum OPERATION{
 		SUM, DIFFERENCE, MULTIPLICATION, DIVISION
 	}
 	

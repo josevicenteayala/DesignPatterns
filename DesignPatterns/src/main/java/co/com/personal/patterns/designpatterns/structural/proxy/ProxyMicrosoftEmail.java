@@ -1,4 +1,4 @@
-package co.com.personal.patterns.designpatterns.proxy;
+package co.com.personal.patterns.designpatterns.structural.proxy;
 
 import java.util.Objects;
 

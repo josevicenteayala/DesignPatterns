@@ -2,6 +2,7 @@ package co.com.personal.patterns.designpatterns.singleton;
 
 import static org.junit.Assert.*;
 
+import co.com.personal.patterns.designpatterns.creational.singleton.PoolConnectionSingleton;
 import org.junit.Before;
 import org.junit.Test;
 

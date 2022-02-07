@@ -1,5 +1,7 @@
 package co.com.personal.patterns.designpatterns.state;
 
+import co.com.personal.patterns.designpatterns.behavioral.state.Puerta;
+import co.com.personal.patterns.designpatterns.behavioral.state.PuertaImpl;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;

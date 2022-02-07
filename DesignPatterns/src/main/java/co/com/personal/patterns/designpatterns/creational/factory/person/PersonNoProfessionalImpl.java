@@ -1,20 +1,20 @@
-package co.com.personal.patterns.designpatterns.creational.factory;
+package co.com.personal.patterns.designpatterns.creational.factory.person;
 
-public class PersonaNoProfesionalImpl implements Persona {
+public class PersonNoProfessionalImpl implements Persona {
 
 	private String nombre;
 	private String apellido;
 	private int identificacion;
 	
-	private PersonaNoProfesionalImpl() {
+	private PersonNoProfessionalImpl() {
 		
 	}
 
 	public static Persona crearPersonaNoProfesional(String nombre, String apellido, int identificacion) {
-		return new PersonaNoProfesionalImpl(nombre, apellido, identificacion);
+		return new PersonNoProfessionalImpl(nombre, apellido, identificacion);
 	}
 	
-	private PersonaNoProfesionalImpl(String nombre, String apellido, int identificacion) {
+	private PersonNoProfessionalImpl(String nombre, String apellido, int identificacion) {
 		this.nombre = nombre;
 		this.apellido = apellido;
 		this.identificacion = identificacion;

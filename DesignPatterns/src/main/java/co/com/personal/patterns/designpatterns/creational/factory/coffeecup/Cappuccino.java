@@ -1,7 +1,7 @@
 /**
  * 
  */
-package co.com.personal.patterns.designpatterns.factory.coffeecup;
+package co.com.personal.patterns.designpatterns.creational.factory.coffeecup;
 
 /**
  * @author vin00

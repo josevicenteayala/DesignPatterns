@@ -5,4 +5,4 @@
  * @author josevicenteayalaluna
  *
  */
-package co.com.personal.patterns.designpatterns.strategy.comics;
+package co.com.personal.patterns.designpatterns.behavioral.strategy.comics;

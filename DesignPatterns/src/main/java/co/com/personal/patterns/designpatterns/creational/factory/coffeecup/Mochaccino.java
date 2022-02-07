@@ -1,4 +1,4 @@
-package co.com.personal.patterns.designpatterns.factory.coffeecup;
+package co.com.personal.patterns.designpatterns.creational.factory.coffeecup;
 
 public class Mochaccino implements CoffeeType {
 

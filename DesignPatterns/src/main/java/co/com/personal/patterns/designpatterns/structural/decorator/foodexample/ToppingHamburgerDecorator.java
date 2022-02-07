@@ -1,4 +1,4 @@
-package co.com.personal.patterns.designpatterns.decorator.foodexample;
+package co.com.personal.patterns.designpatterns.structural.decorator.foodexample;
 
 public abstract class ToppingHamburgerDecorator implements Hamburger {
 

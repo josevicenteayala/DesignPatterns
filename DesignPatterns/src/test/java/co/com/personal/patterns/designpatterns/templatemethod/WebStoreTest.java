@@ -8,9 +8,9 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import co.com.personal.patterns.designpatterns.templatemethod.FootballWebStore;
-import co.com.personal.patterns.designpatterns.templatemethod.MarketWebStore;
-import co.com.personal.patterns.designpatterns.templatemethod.WebStore;
+import co.com.personal.patterns.designpatterns.behavioral.templatemethod.webstore.FootballWebStore;
+import co.com.personal.patterns.designpatterns.behavioral.templatemethod.webstore.MarketWebStore;
+import co.com.personal.patterns.designpatterns.behavioral.templatemethod.webstore.WebStore;
 
 public class WebStoreTest {
 

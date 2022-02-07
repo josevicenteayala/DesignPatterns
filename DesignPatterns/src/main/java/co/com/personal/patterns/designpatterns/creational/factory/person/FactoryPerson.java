@@ -1,4 +1,4 @@
-package co.com.personal.patterns.designpatterns.creational.factory;
+package co.com.personal.patterns.designpatterns.creational.factory.person;
 
 /**
  * Permite construir un objeto Persona mediante la identificacion del tipo de persona y los atributos que la caracterizan
@@ -7,7 +7,7 @@ package co.com.personal.patterns.designpatterns.creational.factory;
  * @version 1.0.0
  *
  */
-public class FactoryPersona {
+public class FactoryPerson {
 
 	public enum TIPOPERSONA {
 		PROFESIONAL, NOPROFESIONAL
@@ -29,11 +29,11 @@ public class FactoryPersona {
 	public static Persona crearPersona(TIPOPERSONA tipoPersona, String nombre, String apellido, int identificacion) {
 		switch (tipoPersona) {
 		case PROFESIONAL:
-			return PersonaProfesionalImpl.crearPersonaProfesional(nombre, apellido, identificacion);
+			return PersonProfessionalImpl.crearPersonaProfesional(nombre, apellido, identificacion);
 		case NOPROFESIONAL:
-			return PersonaNoProfesionalImpl.crearPersonaNoProfesional(nombre, apellido, identificacion);
+			return PersonNoProfessionalImpl.crearPersonaNoProfesional(nombre, apellido, identificacion);
 		}
-		return PersonaProfesionalImpl.crearPersonaProfesional(nombre, apellido, identificacion);
+		return PersonProfessionalImpl.crearPersonaProfesional(nombre, apellido, identificacion);
 	}
 
 }

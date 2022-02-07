@@ -4,11 +4,11 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import co.com.personal.patterns.designpatterns.decorator.foodexample.BasicHamburger;
-import co.com.personal.patterns.designpatterns.decorator.foodexample.FinalHamburger;
-import co.com.personal.patterns.designpatterns.decorator.foodexample.Hamburger;
-import co.com.personal.patterns.designpatterns.decorator.foodexample.HamburgerBacon;
-import co.com.personal.patterns.designpatterns.decorator.foodexample.HamburgerCheese;
+import co.com.personal.patterns.designpatterns.structural.decorator.foodexample.BasicHamburger;
+import co.com.personal.patterns.designpatterns.structural.decorator.foodexample.FinalHamburger;
+import co.com.personal.patterns.designpatterns.structural.decorator.foodexample.Hamburger;
+import co.com.personal.patterns.designpatterns.structural.decorator.foodexample.HamburgerBacon;
+import co.com.personal.patterns.designpatterns.structural.decorator.foodexample.HamburgerCheese;
 
 public class HamburguerTest {
 

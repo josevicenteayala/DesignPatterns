@@ -1,13 +1,13 @@
 /**
  * 
  */
-package co.com.personal.patterns.designpatterns.strategy.comics;
+package co.com.personal.patterns.designpatterns.behavioral.strategy.comics;
 
 /**
  * @author josevicenteayalaluna
  *
  */
-public class Thor extends Character{
+public class Thor extends Character {
 
 	/**
 	 * 

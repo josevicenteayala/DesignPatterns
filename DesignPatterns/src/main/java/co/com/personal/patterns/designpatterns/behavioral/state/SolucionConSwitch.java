@@ -1,4 +1,4 @@
-package co.com.personal.patterns.designpatterns.state;
+package co.com.personal.patterns.designpatterns.behavioral.state;
 
 public class SolucionConSwitch {
 

@@ -2,6 +2,8 @@ package co.com.personal.patterns.designpatterns.strategy;
 
 import static org.junit.Assert.*;
 
+import co.com.personal.patterns.designpatterns.behavioral.strategy.Calculator;
+import co.com.personal.patterns.designpatterns.behavioral.strategy.TraditionalCalculator;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;

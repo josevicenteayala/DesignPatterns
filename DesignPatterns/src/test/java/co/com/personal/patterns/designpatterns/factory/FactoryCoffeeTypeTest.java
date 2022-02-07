@@ -8,8 +8,8 @@ import static org.junit.Assert.assertTrue;
 import org.junit.Before;
 import org.junit.Test;
 
-import co.com.personal.patterns.designpatterns.factory.coffeecup.CoffeeType;
-import co.com.personal.patterns.designpatterns.factory.coffeecup.FactoryCoffee;
+import co.com.personal.patterns.designpatterns.creational.factory.coffeecup.CoffeeType;
+import co.com.personal.patterns.designpatterns.creational.factory.coffeecup.FactoryCoffee;
 
 /**
  * @author vin00
@@ -23,7 +23,7 @@ public class FactoryCoffeeTypeTest {
 	}
 	
 	/**
-	 * Test method for {@link co.com.personal.patterns.designpatterns.factory.coffeecup.FactoryCoffee#getCoffeeType(co.com.personal.patterns.designpatterns.factory.coffeecup.CoffeeType.COFFEE)}.
+	 * Test method for {@link FactoryCoffee#getCoffeeType(CoffeeType.COFFEE)}.
 	 */
 	@Test
 	public void testGetCoffeeTypeCappuccino() {
@@ -32,7 +32,7 @@ public class FactoryCoffeeTypeTest {
 	}
 
 	/**
-	 * Test method for {@link co.com.personal.patterns.designpatterns.factory.coffeecup.FactoryCoffee#getCoffeeType(co.com.personal.patterns.designpatterns.factory.coffeecup.CoffeeType.COFFEE)}.
+	 * Test method for {@link FactoryCoffee#getCoffeeType(CoffeeType.COFFEE)}.
 	 */
 	@Test
 	public void testGetCoffeeTypeMochaccino() {
@@ -41,7 +41,7 @@ public class FactoryCoffeeTypeTest {
 	}
 	
 	/**
-	 * Test method for {@link co.com.personal.patterns.designpatterns.factory.coffeecup.FactoryCoffee#getCoffeeType(co.com.personal.patterns.designpatterns.factory.coffeecup.CoffeeType.COFFEE)}.
+	 * Test method for {@link FactoryCoffee#getCoffeeType(CoffeeType.COFFEE)}.
 	 */
 	@Test
 	public void testGetCoffeeTypeColombianCoffee() {

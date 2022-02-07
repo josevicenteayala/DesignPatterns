@@ -1,4 +1,4 @@
-package co.com.personal.patterns.designpatterns.singleton;
+package co.com.personal.patterns.designpatterns.creational.singleton;
 
 /**
  * @author Asus

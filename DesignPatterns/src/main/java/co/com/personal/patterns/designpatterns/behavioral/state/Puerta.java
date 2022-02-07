@@ -1,4 +1,4 @@
-package co.com.personal.patterns.designpatterns.state;
+package co.com.personal.patterns.designpatterns.behavioral.state;
 
 /**
  * Interface que define el comportamiento de una puerta

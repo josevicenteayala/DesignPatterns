@@ -1,4 +1,4 @@
-package co.com.personal.patterns.designpatterns.decorator;
+package co.com.personal.patterns.designpatterns.structural.decorator;
 
 public class NissanCarDecorator extends CarDecorator {
 

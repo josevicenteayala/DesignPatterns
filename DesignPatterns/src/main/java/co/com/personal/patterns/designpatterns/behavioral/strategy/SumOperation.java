@@ -1,4 +1,4 @@
-package co.com.personal.patterns.designpatterns.strategy;
+package co.com.personal.patterns.designpatterns.behavioral.strategy;
 
 public class SumOperation implements MathOperation {
 

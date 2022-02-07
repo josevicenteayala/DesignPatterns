@@ -2,6 +2,8 @@ package co.com.personal.patterns.designpatterns.proxy;
 
 import static org.junit.Assert.*;
 
+import co.com.personal.patterns.designpatterns.structural.proxy.Email;
+import co.com.personal.patterns.designpatterns.structural.proxy.ProxyMicrosoftEmail;
 import org.junit.Before;
 import org.junit.Test;
 

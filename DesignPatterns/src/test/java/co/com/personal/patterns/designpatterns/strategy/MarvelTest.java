@@ -6,15 +6,15 @@ package co.com.personal.patterns.designpatterns.strategy;
 import org.junit.Before;
 import org.junit.Test;
 
-import co.com.personal.patterns.designpatterns.strategy.comics.Armory;
-import co.com.personal.patterns.designpatterns.strategy.comics.Captain;
-import co.com.personal.patterns.designpatterns.strategy.comics.Character;
-import co.com.personal.patterns.designpatterns.strategy.comics.Hammer;
-import co.com.personal.patterns.designpatterns.strategy.comics.Hand;
-import co.com.personal.patterns.designpatterns.strategy.comics.IronMan;
-import co.com.personal.patterns.designpatterns.strategy.comics.Marvel;
-import co.com.personal.patterns.designpatterns.strategy.comics.Thor;
-import co.com.personal.patterns.designpatterns.strategy.comics.WeaponBehavior;
+import co.com.personal.patterns.designpatterns.behavioral.strategy.comics.Armory;
+import co.com.personal.patterns.designpatterns.behavioral.strategy.comics.Captain;
+import co.com.personal.patterns.designpatterns.behavioral.strategy.comics.Character;
+import co.com.personal.patterns.designpatterns.behavioral.strategy.comics.Hammer;
+import co.com.personal.patterns.designpatterns.behavioral.strategy.comics.Hand;
+import co.com.personal.patterns.designpatterns.behavioral.strategy.comics.IronMan;
+import co.com.personal.patterns.designpatterns.behavioral.strategy.comics.Marvel;
+import co.com.personal.patterns.designpatterns.behavioral.strategy.comics.Thor;
+import co.com.personal.patterns.designpatterns.behavioral.strategy.comics.WeaponBehavior;
 
 /**
  * @author josevicenteayalaluna
@@ -30,7 +30,7 @@ public class MarvelTest {
 	}
 
 	/**
-	 * Test method for {@link co.com.personal.patterns.designpatterns.strategy.comics.Marvel#showFight()}.
+	 * Test method for {@link Marvel#showFight()}.
 	 */
 	@Test
 	public void testShowFight() {

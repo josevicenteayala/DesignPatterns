@@ -1,4 +1,4 @@
-package co.com.personal.patterns.designpatterns.observer;
+package co.com.personal.patterns.designpatterns.behavioral.observer;
 
 import java.util.Observable;
 import java.util.Observer;
